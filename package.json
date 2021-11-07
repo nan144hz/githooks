@@ -2,6 +2,8 @@
   "name": "git-hooks",
   "version": "0.1.0",
   "private": true,
+  "author": "nan144hz",
+  "description": "It's an app which search your information of GitHub on their API with React Hooks.",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

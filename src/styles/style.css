@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .box {
+    width: 470px;
+    height: 275px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.content .boxInput {
+    border-bottom: 8px solid #00af5f;
+}
+
+.content .boxInfos {
+    border-bottom: 8px solid #00af87;
+}
+
+.content .boxRepos {
+    border-bottom: 8px solid #00afaf;
+}
+
+@media (max-width: 1564px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+.content .boxInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #747474;
+}
+
+.content .boxInput input {
+    width: 350px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: 0;
+    background-color: #e6e6e1;
+    color: #747474;
+    font-size: 1.15em;
+}
+
+.content .boxInput button {
+    width: 200px;
+    padding: 5px;
+    outline: 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: #a8ff78; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #78ffd6,
+        #a8ff78
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #78ffd6,
+        #a8ff78
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    color: #00af5f;
+    font-size: 1.15em;
+    transition: all 0.3s;
+}
+
+.content .boxInput button:hover {
+    color: #fff;
+}
+
+.content .boxInfos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #747474;
+}
+
+.content .boxInfos .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .boxInfos .avatar img {
+    border-radius: 100%;
+}
+
+.content .boxRepos {
+    color: #747474;
+    padding: 25px;
+    font-size: 1.15em;
+    overflow: hidden;
+}
